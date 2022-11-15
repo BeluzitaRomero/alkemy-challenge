@@ -56,7 +56,7 @@ export const Login = () => {
     }
 
     axios
-      .post("https://challenge-react.alkemy.org", { email, password })
+      .post("http://challenge-react.alkemy.org", { email, password })
       .then((res) => {
         const token = res.data.token;
         //*setItem tiene dos parametros,

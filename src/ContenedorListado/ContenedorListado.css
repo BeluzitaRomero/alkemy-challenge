@@ -1,0 +1,12 @@
+.title {
+  text-align: center;
+  margin: 2rem;
+}
+
+.movie-title {
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

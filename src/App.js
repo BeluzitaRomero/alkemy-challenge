@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import { DetailContainer } from "./components/DetailContainer/DetailContainer";
+import { Error } from "./components/Error404/Error";
+import { Footer } from "./components/Footer/Footer";
+import { FoundMovies } from "./components/FoundMovies";
+import { Header } from "./components/Header/Header";
+import { Login } from "./components/Login/Login";
+import { ContenedorListado } from "./ContenedorListado/ContenedorListado";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/listado" element={<ContenedorListado />} />
+        <Route path="/detail/:id" element={<DetailContainer />} />
+        <Route path="/results" element={<FoundMovies />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

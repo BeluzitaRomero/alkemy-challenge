@@ -1,0 +1,15 @@
+header {
+  width: 100vw;
+}
+
+.buscador {
+  display: flex;
+}
+
+.logo-pop {
+  width: 4rem;
+}
+
+.logo {
+  margin-right: 0;
+}

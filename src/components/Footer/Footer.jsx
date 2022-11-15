@@ -7,9 +7,9 @@ export const Footer = () => {
     <footer
       style={{ backgroundColor: "#1976d2", color: "white", padding: "1.5rem" }}
     >
-      <Typography textAlign="center">
-        <ul>
-          <li>
+      <ul>
+        <li>
+          <Typography textAlign="center">
             <a
               style={{ textDecoration: "none", color: "white" }}
               href="https://www.instagram.com/"
@@ -18,11 +18,11 @@ export const Footer = () => {
             >
               <InstagramIcon fontSize="large" />
             </a>
-          </li>
-        </ul>
-      </Typography>
+          </Typography>
+        </li>
+      </ul>
       <Typography textAlign="center">
-        <p>COPYRIGHT BELUZITA ALKEMY CHALLENGE</p>
+        COPYRIGHT BELUZITA ALKEMY CHALLENGE
       </Typography>
     </footer>
   );
